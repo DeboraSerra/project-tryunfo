@@ -1,0 +1,323 @@
+:root {
+
+  --red: rgba(255, 0, 0, 0.705);
+
+  --darker-green: rgba(2, 58, 45, 0.904);
+
+  --dark-green: rgb(3, 107, 82);
+
+  --trybe-green: #0fa36b;
+
+  --light-green: rgb(47, 193, 140);
+
+  --light-gray: rgb(225, 229, 235);
+
+  --gray1: rgb(62, 66, 75);
+
+  --gray2: rgb(40, 42, 47);
+
+  --gray3: rgb(30, 31, 36);
+
+  --gray4: rgb(26, 27, 28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+form {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.616);
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 45%;
+}
+
+.label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.attr-sect {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.attr {
+  border: 1px solid var(--light-gray);
+  border-bottom: 1.2px solid var(--gray1);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 35px;
+  width: 90%;
+}
+
+.input2, .select2 {
+  background-color: white;
+  border: 1px solid var(--light-gray);
+  border-bottom: 1.2px solid var(--gray1);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 30px;
+  margin: auto;
+  width: 95%;
+}
+
+.textarea {
+  border: 1px solid var(--light-gray);
+  border-bottom: 1.2px solid var(--gray1);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 30;
+  margin: auto;
+  resize: none;
+  width: 95%;
+}
+
+button {
+  border-radius: 15px;
+  font-size: 1.1rem;
+  margin: 10px;
+  padding: 15px;
+}
+
+.card {
+  background-color: var(--trybe-green);
+  border: 10px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+  height: 600px;
+  margin: 15px;
+  position: relative;
+  width: 400px;
+}
+
+.image-sect {
+  border: 1px solid var(--gray1);
+  border-radius: 10px;
+  height: 50%;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.card-name {
+  text-shadow: 0 0 10px var(--gray4);
+}
+
+.name-sect {
+  background-color: var(--dark-green);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--light-green);
+  height: 50px;
+  text-align: center;
+}
+
+.image {
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-attr {
+  background-color: white;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.card-attr:nth-child( 1 ):before {
+  content: 'Attribute 1 --------------------- ';
+}
+
+.card-attr:nth-child( 2 ):before {
+  content: 'Attribute 2 --------------------- ';
+}
+
+.card-attr:nth-child( 3 ):before {
+  content: 'Attribute 3 --------------------- ';
+}
+
+.desc-sect {
+  background-color: var(--dark-green);
+  color: var(--light-gray);
+  height: 80px;
+  margin: 10px 0;
+}
+
+.card-desc {
+  margin: auto;
+  text-shadow: 0 0 10px var(--gray4);
+  width: 95%;
+}
+
+.rarity {
+  background-color: white;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+}
+
+.super-trunfo {
+  align-items: center;
+  background-color: white;
+  border: 3px dashed var(--red);
+  border-radius: 50%;
+  color: var(--darker-green);
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 70px;
+  margin-left: 300px;
+  margin-top: -550px;
+  text-align: center;
+  transform: rotate(20deg);
+  width: 70px;
+}
+
+.form-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2%;
+  width: 80%;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.eachCard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px auto 50px;
+  width: 80%;
+}
+
+.saved-sect {
+  align-items: flex-start;
+  display: flex;
+  margin: auto;
+  min-height: 500px;
+  width: 95%;
+}
+
+.filters {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.616);
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 15%;
+}
+
+.search-title {
+  text-align: center;
+}
+
+.input {
+  height: 35px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.select {
+  height: 35px;
+  margin: auto;
+  width: 90%;
+}
+
+.checkbox-label {
+  margin: 15px auto;
+  width: 90%;
+}
+
+.checkbox {
+  height: 15px;
+  margin: 5px;
+  width: 15px;
+}
+
+.pai-de-todos {
+  border: 1px solid black;
+  width: 100vw;
+}
+
+@media screen and ( max-width : 1000px ) {
+
+  form {
+    height: 600px;
+    width: 400px;
+  }
+
+  .saved-sect {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .filters {
+    margin-top: 15px;
+    width: 400px;
+  }
+}
+
+@media screen and ( max-width : 650px ) {
+
+  .page-title {
+    font-size: 3rem;
+    margin: 20px auto;
+  }
+
+  .input, .select, .input2, .textarea, .select2 {
+    font-size: 1.5rem;
+    height: 45px;
+  }
+
+  .label, .checkbox-label {
+    font-size: 1.5rem;
+  }
+
+  .attr {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  .checkbox2 {
+    height: 18px;
+    margin: 10px;
+    width: 18px;
+  }
+}
